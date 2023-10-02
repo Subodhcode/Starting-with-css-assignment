@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Form</title>
+    <style>
+        /* Custom color palette */
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #e74c3c;
+            --background-color: #f2f2f2;
+            --form-section-opacity: 0.8;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Form container */
+        .form-container {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            opacity: var(--form-section-opacity); /* Applying opacity */
+        }
+
+        /* Form elements */
+        .form-label {
+            font-weight: bold;
+            color: var(--primary-color);
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: var(--secondary-color);
+        }
+
+        .form-button {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .form-button:hover {
+            background-color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sample Form</h2>
+        <form>
+            <label class="form-label" for="name">FullName:</label>
+            <input class="form-input" type="text" id="name" name="name" required>
+
+            <label class="form-label" for="name">Mobile No:</label>
+            <input class="form-input" type="text" id="name" name="mobileNo" required>
+            
+            <label class="form-label" for="email">Email:</label>
+            <input class="form-input" type="email" id="email" name="email" required>
+            
+            <label class="form-label" for="message">Message:</label>
+            <textarea class="form-input" id="message" name="message" rows="4" required></textarea>
+            
+            <button class="form-button" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs with BEM</title>
+    <style>
+        /* Block: paragraph */
+        .paragraph {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* Block: paragraph, Modifier: highlighted */
+        .paragraph--highlighted {
+            background-color: #ffc107;
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Block: paragraph, Modifier: italic */
+        .paragraph--italic {
+            font-style: italic;
+            color: #007acc;
+        }
+
+        /* Block: paragraph, Modifier: important */
+        .paragraph--important {
+            font-weight: bold;
+            color: #ff0000;
+        }
+
+        /* Block: paragraph, Element: quote */
+        .paragraph__quote {
+            border-left: 4px solid #009688;
+            padding-left: 10px;
+            color: #009688;
+            font-style: italic;
+        }
+
+        /* Block: paragraph, Modifier: note */
+        .paragraph--note {
+            background-color: #f0f0f0;
+            border: 1px solid #888;
+            padding: 10px;
+            color: #333;
+        }
+
+        /* Block: paragraph, Element: caption */
+        .paragraph__caption {
+            font-size: 12px;
+            color: #777;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph">This is a regular paragraph.</p>
+    <p class="paragraph--highlighted">This is a highlighted paragraph.</p>
+    <p class="paragraph--italic">This is an italic paragraph.</p>
+    <p class="paragraph--important">This is an important paragraph.</p>
+    <p class="paragraph__quote">This is a quoted paragraph.</p>
+    <p class="paragraph--note">This is a note paragraph.</p>
+    <p class="paragraph__caption">This is a caption.</p>
+</body>
+</html>
